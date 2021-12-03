@@ -7,8 +7,7 @@ def greet():
     if if_greeting:
         intention = 'greating'
     if intention == 'greating':
-        greets = ["hey there!", 'sup', 'Whats Up?',
-                  'How are you', 'Hellow There']
+        greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
         print(greets[random])
 # is an answer to how your day is going?
 def day_answer():
@@ -20,8 +19,7 @@ def day_answer():
         if if_day_answer:
             intention = 'greating'
         if intention == 'greating':
-            greets = ["hey there!", 'sup', 'Whats Up?',
-                      'How are you', 'Hellow There']
+            greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
             print('Server: '+ greets[random])
 
 def user_input():
