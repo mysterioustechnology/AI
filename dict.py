@@ -1,14 +1,15 @@
+import random;
 # is greet?
-def greet():
+def greet(input):
     greeting = ['hi', 'hello', 'hey']
     intention = ""
-    if_greeting = any(greeting in user for greeting in greeting)
+    if_greeting = any(greeting in input for greeting in greeting)
     random_num = random.randint(0, 4)
     if if_greeting:
         intention = 'greating'
     if intention == 'greating':
         greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
-        print(greets[random])
+        print(greets[random_num])
 # is an answer to how your day is going?
 def day_answer():
     if_day_answer = False;
@@ -16,14 +17,14 @@ def day_answer():
     intention = ""
     if_day_answer = any(day_answer in user for day_answer in day_answer)
     if if_day_answer:
-        random = random.randint(0, 4)
+        random_num = random.randint(0, 4)
         if if_day_answer:
             intention = 'greating'
         if intention == 'greating':
             greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
-            print('Server: '+ greets[random])
-def user_input():
+            print('Server: '+ greets[random_num])
+def user_input(intention):
     user = input('User: ')
     cash = intention;
-    greet();
-    day_answer();
+    greet(user);
+    day_answer(user);
