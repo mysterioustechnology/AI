@@ -1,8 +1,6 @@
 import random;
 import dict;
 
-
-
 # is an answer to how your day is going?
 def day_answer(input):
     intention = ""
