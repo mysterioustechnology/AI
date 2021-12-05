@@ -1,4 +1,4 @@
-import dict;
+import ;
 cash = '';
 intention = '';
 user = '';
