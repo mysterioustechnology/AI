@@ -17,4 +17,12 @@ def day_answer(input):
 def greet():
     random_num = random.randint(0, 4)
     if dict.intention == 'greating':
-        print('Server: '+dict.greets[random_num])
+        x = dict.greets[random_num]
+        return x
+
+def stop():
+    random_num = random.randint(0, 4)
+    if dict.intention == 'stop':
+        x = dict.end[random_num]
+        return x
+        dict.go = false

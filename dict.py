@@ -12,3 +12,4 @@ end = ['bye','see you!','talk to you later']
 cash = '';
 intention = '';
 user = '';
+go = True
