@@ -1,4 +1,5 @@
-import Intention,dict;
+import dict
+from Intention import user_input;
 
 
 
@@ -7,6 +8,5 @@ name = input('Name: ')
 print('Server: Hi '+name+'! I am a test AI made by Johnathon!')
     
 while True:
-    Intention.user_input(intention);
-    if user == 'stop':
-        break;
+    user_input(dict.intention);
+

@@ -13,16 +13,8 @@ def day_answer(input):
             greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
             print('Server: '+ greets[random_num])
 
-# is greet?
-def greet(input):
 
-    intention = ""
-    if_greeting = any(greeting in input for greeting in greeting)
+def greet():
     random_num = random.randint(0, 4)
-    if if_greeting:
-        intention = 'greating'
-    if intention == 'greating':
-        greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
-        print(greets[random_num])
-
-day_answer('hey');
+    if dict.intention == 'greating':
+        print('Server: 'dict.greets[random_num])
