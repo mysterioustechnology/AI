@@ -4,7 +4,7 @@ day_responce_positive = ['Nice!','Cool!','Thats Good','Glade To Here it']
 
 #greatings
 greeting = ['hi', 'hello', 'hey']
-greets = ["hey there!", 'sup', 'Whats Up?','How are you', 'Hellow There']
+greets = ['hey there!', 'sup', 'Whats Up?','How are you', 'Hellow There']
 
 #endings
 ending = ['goodbye','bye','stop']
