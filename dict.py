@@ -1,5 +1,6 @@
-if_day_answer = False;
-day_answer = ['hi', 'hello', 'hey']
+#day answers
+day_answer_positive = ['good','great','awesome']
+day_responce_positive = ['Nice!','Cool!','Thats Good','Glade To Here it']
 
 #greatings
 greeting = ['hi', 'hello', 'hey']
