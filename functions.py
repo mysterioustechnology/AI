@@ -13,11 +13,11 @@ def greet():
     random_num = random.randint(0, 4)
     if dict.intention == 'greating':
         x = dict.greets[random_num]
-        return x
+        return str(x)
 
 def stop():
     random_num = random.randint(0, 4)
     if dict.intention == 'stop':
         x = dict.end[random_num]
-        return x
+        return str(x)
         dict.go = false
