@@ -12,5 +12,5 @@ def get_int(input,recent):
     for items in dict.greeting:
         if items == input:
             dict.intention = 'greeting'
-            print('Server: '+ functions.greet())
+            print('Server: '+ str(functions.greet()))
         
