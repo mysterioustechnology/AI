@@ -1,6 +1,6 @@
 #day answers
 day_answer_positive = ['good','great','awesome']
-day_responce_positive = ['Nice!','Cool!','Thats Good','Glade To Here it']
+day_responce_positive = ['Nice!','Cool!','Thats Good','Glad To Here it']
 
 #greatings
 greeting = ['hi', 'hello', 'hey']
