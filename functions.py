@@ -6,7 +6,7 @@ def day_answer(input):
     random_num = random.randint(0, 4)
     if dict.intention == 'day_answer':
         
-        print('Server: '+ greets[random_num])
+        greets[random_num]
 
 
 def greet():
@@ -17,8 +17,10 @@ def greet():
 
 
 def stop():
-    random_num = random.randint(0, 4)
+    random_num = random.randint(0, 3)
     if dict.intention == 'stop':
         x = dict.end[random_num]
         dict.go = false
-        return str(x)
+        if type(x) == 'NoneType':
+            x = 'error'
+        return x

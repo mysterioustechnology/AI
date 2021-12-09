@@ -14,3 +14,4 @@ cash = '';
 intention = '';
 user = '';
 go = True
+output = ''

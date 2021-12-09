@@ -8,11 +8,12 @@ def user_input(intention):
 def get_int(input,recent):
     for items in dict.ending:
         if items == input:
-            print('Server: '+functions.stop())
+            dict.output=functions.stop()
     for items in dict.greeting:
         if items == input:
             dict.intention = 'greeting'
-            output = functions.greet()
+            dict.output = functions.greet()
 
-    print(output)
-        
+
+        print('Server: '+dict.output)
+
