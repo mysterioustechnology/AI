@@ -1,5 +1,6 @@
 import random;
 import dict;
+from dict import server
 
 # is an answer to how your day is going?
 def day_answer(input):
@@ -10,14 +11,14 @@ def day_answer(input):
 
 
 def greet():
-    random_num = random.randint(0, 4)
+    global server 
     if dict.intention == 'greating':
-        x = random.choise(dict.greets)
-        return x
+        server = random.choise(dict.greets)
+        return server
 
 
 def stop():
+    global server
     if dict.intention == 'stop':
-        x = random.choice(dict.end)
-        dict.go = false
-        return x
+        server = random.choice(dict.end)
+        dict.go = False
