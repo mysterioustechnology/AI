@@ -15,5 +15,5 @@ def get_int(input,recent):
             dict.output = functions.greet()
 
 
-        print('Server: '+dict.output)
+    print('Server: '+dict.output)
 
