@@ -1,7 +1,5 @@
 import dict
-from Intention import user_input;
-from dict import go;
-
+from Intention import user_input
 
 
 # start
@@ -10,6 +8,7 @@ if name == '':
     name = 'Johnathon'
 print('Server: Hi '+name+'! I am a test AI made by Johnathon!')
     
-while go:
-    user_input(dict.intention);
+while dict.go:
+    output = user_input(dict.intention);
+    print('Server: '+ str(output))
 
