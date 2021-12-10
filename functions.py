@@ -22,3 +22,9 @@ def stop():
     if dict.intention == 'stop':
         server = random.choice(dict.end)
         dict.go = False
+
+def play(game):
+    if game == 'tick tac toe':
+        print('Loading...')
+        print('/n'*50)
+        execfile(tic_tac_toe.py)
