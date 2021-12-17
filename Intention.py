@@ -1,7 +1,7 @@
 import dict
 import functions
 
-passthrough = ''
+
 def user_input(intention):
     user = input('User: ')
     cash = intention;
@@ -10,7 +10,7 @@ def user_input(intention):
     return output
 
 def get_int(input,recent):
-    global pass_through
+    from dict import pass_through
     input = input.split()
     for items in dict.ending:
         if items == input:
