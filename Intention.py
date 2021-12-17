@@ -1,5 +1,7 @@
 import dict
 import functions
+
+passthrough = ''
 def user_input(intention):
     user = input('User: ')
     cash = intention;
@@ -8,6 +10,7 @@ def user_input(intention):
     return output
 
 def get_int(input,recent):
+    global pass_through
     input = input.split()
     for items in dict.ending:
         if items == input:
@@ -19,7 +22,7 @@ def get_int(input,recent):
     if 'play' in input:
         if 'tic' or 'tac' or 'toe' in input:
             functions.play('tic tac toe')
-
+            pass_through = 'game'
     return pass_through
 
 
