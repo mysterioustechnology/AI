@@ -24,7 +24,7 @@ def stop():
         dict.go = False
 
 def play(game):
-    if game == 'tick tac toe':
+    if game == 'tic tac toe':
         print('Loading...')
         print('/n'*50)
         execfile(tic_tac_toe.py)

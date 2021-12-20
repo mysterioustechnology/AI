@@ -6,7 +6,7 @@ def user_input(intention):
     user = input('User: ')
     cash = intention;
     get_int(user,cash)
-    output = Intention.get_int()
+    output = get_int(user,cash)
     return output
 
 def get_int(input,recent):
@@ -21,8 +21,10 @@ def get_int(input,recent):
             pass_through = functions.greet()
     if 'play' in input:
         if 'tic' or 'tac' or 'toe' in input:
-            functions.play('tic tac toe')
+            functions.play('tic tac toe)
             pass_through = 'game'
+    if not input:
+        pass_through = 'Say Something'
     return pass_through
 
 
