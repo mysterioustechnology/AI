@@ -9,21 +9,28 @@ def user_input(intention):
     output = get_int(user,cash)
     return output
 
-def get_int(input,recent):
+def get_int(user,recent):
     from dict import pass_through
-    input = input.split()
+    user = user.lower()
+    user = user.split()
     for items in dict.ending:
-        if items == input:
+        if items == user:
             pass_through =functions.stop()
     for items in dict.greeting:
-        if items == input:
+        if items == user:
             dict.intention = 'greeting'
             pass_through = functions.greet()
-    if 'play' in input:
-        if 'tic' or 'tac' or 'toe' in input:
-            functions.play('tic tac toe)
+    if 'play' in user:
+        x = user.index('play')
+        rem = user[:x]
+        for items in rem:
+            user = user.remove(items)
+        if 'tic' or 'tac' or 'toe' in user:
+            functions.play('tic tac toe')
             pass_through = 'game'
-    if not input:
+        else:
+            functions.play('null')
+    if not user:
         pass_through = 'Say Something'
     return pass_through
 
