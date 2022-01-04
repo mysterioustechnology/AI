@@ -1,6 +1,5 @@
 import random;
 import dict;
-from dict import server
 
 # is an answer to how your day is going?
 # def day_answer(input):
@@ -21,7 +20,7 @@ def stop():
     global server
     if dict.intention == 'stop':
         server = random.choice(dict.end)
-        dict.go = False
+        global_dict['go'] = False
 
 def play(game):
     if game == 'null':

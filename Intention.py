@@ -27,7 +27,8 @@ def get_int(user,recent):
             user = user.remove(items)
         if 'tic' or 'tac' or 'toe' in user:
             functions.play('tic tac toe')
-            pass_through = 'game'
+            pass_through = 'game over'
+            user = ""
         else:
             functions.play('null')
     if not user:

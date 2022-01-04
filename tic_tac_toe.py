@@ -11,8 +11,8 @@ def tic_tac_toe():
             index = input(prompt)
             if index == 'back':
                return 'back'
-            if index = 'quit':
-                
+            if index == 'clear':
+                return 'clear'
             try:
                 index = int(index)
                 if index >= 0 and index <= 2:
@@ -26,6 +26,10 @@ def tic_tac_toe():
     # Return True if the game is over and False
     # otherwise. Print a message indicating who
     # won or whether there was a tie.
+    
+    #stop var setup
+    stop = False
+
     def game_is_over(board):
         for i in range(3):
             # Check horizontal
@@ -82,13 +86,16 @@ def tic_tac_toe():
     turn = "x"
 
     # Play tic tac toe
-    while not game_is_over(board):
+    while not game_is_over(board) and not stop:
         print_board(board)
         print("It's " + turn + "'s turn.")
         row = get_valid_index("Row: ")
         if row == 'back':
             board = cash
             print("Undo!")
+        if row == 'clear':
+            stop = True
+            break
         else: 
             col = get_valid_index("Col: ") 
         if board[row][col] == ' ':
@@ -103,3 +110,4 @@ def tic_tac_toe():
             turn = 'o'
         else:
             turn = 'x'
+    return 'Game Over'
