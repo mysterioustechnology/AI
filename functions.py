@@ -31,5 +31,11 @@ def play(game):
         play(game)
     if game == 'tic tac toe':
         print('Loading...')
+        print('\n'*200)
         from tic_tac_toe import tic_tac_toe
         tic_tac_toe()
+    if game == 'hangman':
+        print('Loading...')
+        print('\n'*200)
+        from hangman import hangman
+        hangman()

@@ -16,17 +16,24 @@ def get_int(user,recent):
     for items in dict.ending:
         if items == user:
             pass_through =functions.stop()
-    for items in dict.greeting:
-        if items == user:
+    for i in range(len(dict.greeting)):
+        dict.greeting[i]
+        if dict.greeting[i] == user:
             dict.intention = 'greeting'
             pass_through = functions.greet()
     if 'play' in user:
         x = user.index('play')
         rem = user[:x]
-        for items in rem:
-            user = user.remove(items)
-        if 'tic' or 'tac' or 'toe' in user:
+        for z in range(len(rem)):
+            if rem[z] in user:
+                index = user.index(rem[z])
+                user = user.remove(user[index])
+        if 'tic tac toe' in user:
             functions.play('tic tac toe')
+            pass_through = 'game over'
+            user = ""
+        elif 'hangman' in user:
+            functions.play('hangman')
             pass_through = 'game over'
             user = ""
         else:
