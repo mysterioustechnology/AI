@@ -1,13 +1,23 @@
+new = True
+def diffult():
+    global my_file
+    diffulty = input("choose your diffulty \n hard \n medium \n easy \n : ")
+    if diffulty == 'hard':
+        my_file = open("/home/mysterious/Documents/Local_Git/AI/hard.txt", "r")
+    elif diffulty == 'medum':
+        my_file = open("hangman_medum.txt")
+    else:
+        diffult()
+    new = False
+
 def hangman():
-        # sets the diffulty of the game
-    def diffult():
-        global my_file
-        diffulty = input("choose your diffulty \n hard \n medium \n easy \n : ")
-        if diffulty == 'hard'
-            my_file = open("hangman_hard.txt", "r")
-        else:
+    # sets the difficulty of the game only if the user hasent played before
+    if new:
+        diffult()    
+    else:
+        yn = input("Do you want to change the difficulty? ")
+        if yn == 'yes':
             diffult()
-    diffult()    
     import random
     # var init
     guesses=0

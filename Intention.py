@@ -12,15 +12,21 @@ def user_input(intention):
 def get_int(user,recent):
     from dict import pass_through
     user = user.lower()
-    user = user.split()
-    for items in dict.ending:
-        if items == user:
+    if recent == 'greeting':
+        for item in dict.day_answer_positive:
+            if item == user:
+                dict.intention = 'day:positive'
+                pass_through = functions.day_answer('positive')
+    for item in dict.ending:
+        if item in user:
+            dict.intention = "stop"
             pass_through =functions.stop()
     for i in range(len(dict.greeting)):
         dict.greeting[i]
         if dict.greeting[i] == user:
             dict.intention = 'greeting'
             pass_through = functions.greet()
+    user = user.split()
     if 'play' in user:
         x = user.index('play')
         rem = user[:x]
