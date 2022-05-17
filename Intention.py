@@ -22,7 +22,6 @@ def get_int(user,recent):
             dict.intention = "stop"
             pass_through =functions.stop()
     for i in range(len(dict.greeting)):
-        dict.greeting[i]
         if dict.greeting[i] == user:
             dict.intention = 'greeting'
             pass_through = functions.greet()
